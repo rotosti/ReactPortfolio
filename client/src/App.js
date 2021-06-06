@@ -1,9 +1,14 @@
-import './assets/css/App.css'
+import './assets/css/App.css';
+import NavBar from './components/NavBar';
+import Projects from './components/Projects';
+// import Home from './components/Home';
 
 function App() {
   return (
     <>
-      <h1>Hello from App</h1>
+      <NavBar />
+      <Projects />
+
     </>
   );
 }
