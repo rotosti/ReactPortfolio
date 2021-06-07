@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/assets/css/App.css"],"names":[],"mappings":"AAAA,KAGI,SAAY,CACZ,QACJ","file":"main.d0df6d70.chunk.css","sourcesContent":["body {\n    /* background: url('../images/backgroundImage.jpeg') no-repeat center center fixed;\n    background-size: cover; */\n    padding: 0px;\n    margin: 0px;\n}"]}
