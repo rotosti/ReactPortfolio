@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Row, Col, Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 function Home() {
     return (
@@ -9,7 +10,7 @@ function Home() {
                     <div className="d-flex justify-content-center flex-column text-center">
                         <h1>Hi, I'm Tom</h1>
                         <p>A recent fullstack web dev grad from Northwestern's Coding Bootcamp.</p>
-                        <Button variant='dark'>Let's Talk</Button>
+                        <Link to='/contactme'><Button variant='dark'>Let's Talk</Button></Link>
                     </div>
                     
                 </Col>
