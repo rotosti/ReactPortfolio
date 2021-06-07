@@ -1,5 +1,5 @@
 import './assets/css/App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Projects from './components/Projects'
 import ContactMe from './components/ContactMe';
@@ -8,23 +8,19 @@ import About from './components/About';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename='/'>
       <NavBar />
       <Switch>
-          <Route exact path="/ReactPortfolio">
-            <Home />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/ReactPortfolio/projects">
-            <Projects />
-          </Route>
-          <Route exact path="/ReactPortfolio/contactme">
-            <ContactMe />
-          </Route>
+          <Route exact path="/" component={Home} />
+        
+          <Route  path="/about" component={About} />
+         
+          <Route  path="/projects" component={Projects} />
+     
+          <Route  path="/#contactme" component={ContactMe} />
+         
         </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 
